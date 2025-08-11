@@ -165,16 +165,21 @@ body {
 }
 
 .hr-line {
-    width: 90%;
+    width: 70%;
     border: none;
     height: 0.5px;
     background-color: #0085FF;
     margin-bottom: 70px;
 }
 
-.image-3 {
+.image3 {
     width: 1117px;
     height: 472px;
+}
+
+.image {
+    width: 867px;
+    height: auto;
 }
 
 .call-us-section {
