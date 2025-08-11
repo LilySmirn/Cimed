@@ -12,12 +12,17 @@ body, html {
     font-family: "Segoe UI";
 }
 
+body {
+    padding-top: 90px;
+}
+
 .page-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 
 .header, .main, .footer {
     width: 1200px;
@@ -26,9 +31,14 @@ body, html {
 }
 
 .header {
-    height: 120px;
+    height: 90px;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
@@ -43,11 +53,17 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .phone, .tg {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 8px;
+}
+
+.tg-number {
+    text-decoration: none;
+    color: black;
 }
