@@ -32,7 +32,7 @@ function initPopupForm() {
         e.preventDefault();
 
         const token = '7523368807:AAHIWfGaAawonX6cocOWSmgafzI40woeWXQ';
-        const chatId = '308103705';
+        const chatId = '1786114744';
 
         const formData = new FormData(form);
         const email = formData.get('email');
