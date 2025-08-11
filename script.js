@@ -31,8 +31,8 @@ function initPopupForm() {
     form.addEventListener('submit', async function (e) {
         e.preventDefault();
 
-        const token = '7860976863:AAE2Y43llKvWPkhnV7_MtGHGHUIMBxb4270';
-        const chatId = '-1002653556555';
+        const token = '7523368807:AAHIWfGaAawonX6cocOWSmgafzI40woeWXQ';
+        const chatId = '308103705';
 
         const formData = new FormData(form);
         const email = formData.get('email');
