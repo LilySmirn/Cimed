@@ -115,7 +115,7 @@ body {
     width: 771px;
 }
 
-.hero-button {
+.hero-button, .call-us-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,4 +173,80 @@ body {
 .image-3 {
     width: 1117px;
     height: 472px;
+}
+
+.call-us-section {
+    height: 363px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/bg-logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.call-us-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.call-us-button {
+    text-decoration: none;
+}
+
+.footer-container {
+    height: 232px;
+    background: #0085FF;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.politics, .other {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.politics {
+    font-size: 14px;
+}
+
+.other {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.footer-line {
+    width: 95%;
+    border: none;
+    height: 0.5px;
+    background-color: white;
+}
+
+.footer-tg-number {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 20px 20px 20px;
 }
