@@ -163,7 +163,7 @@ body {
 }
 
 .hr-line {
-    width: 100%;
+    width: 90%;
     border: none;
     height: 0.5px;
     background-color: #0085FF;
@@ -199,7 +199,7 @@ body {
 }
 
 .footer-container {
-    height: 232px;
+    height: 200px;
     background: #0085FF;
     color: white;
     display: flex;
@@ -244,9 +244,20 @@ body {
 }
 
 .footer-content {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 30px 20px 20px 20px;
+    padding: 40px 20px 20px 20px;
+}
+
+.footer-logo, .other {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-logo {
+    top: 20px;
 }
