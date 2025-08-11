@@ -15,6 +15,7 @@ body, html {
 
 body {
     padding-top: 90px;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
 .page-wrapper {
@@ -32,15 +33,16 @@ body {
 }
 
 .header, .main, .footer {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0;
 }
 
 .header {
     height: 90px;
     display: flex;
     align-items: center;
+    justify-content: center;
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -49,7 +51,7 @@ body {
 }
 
 .header-container {
-    width: 100%;
+    width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -198,6 +200,14 @@ body {
     text-decoration: none;
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0085FF;
+}
+
 .footer-container {
     height: 200px;
     background: #0085FF;
@@ -206,6 +216,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 1200px;
 }
 
 .footer-copyright {
@@ -260,4 +271,106 @@ body {
 
 .footer-logo {
     top: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.call-popup {
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 690px;
+    height: auto;
+    background-color: #99CEFF;
+    padding: 30px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.call-popup__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.call-popup__text h2 {
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.call-popup__text p {
+    font-family: "Segoe UI", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.call-popup__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 472px;
+    min-height: 200px;
+    margin-top: 30px;
+}
+
+.popup__btn {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: white;
+    background: #0085FF;
+    padding: 12px 24px;
+    cursor: pointer;
+    display: inline-block;
+    width: 472px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+input {
+    width: 100%;
+    height: 39px;
+    border-radius: 10px;
+    border: 1px solid #0085FF;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+body.noscroll {
+    overflow: hidden;
+}
+
+.input-error {
+    border: 1px solid red !important;
+    background-color: #ffecec;
 }

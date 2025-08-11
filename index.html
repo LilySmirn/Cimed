@@ -39,11 +39,32 @@
                             Автоматически подбирает актуальные клинические рекомендации, услуги и шаблоны по выбранному диагнозу. Всё для быстрого и точного назначения.
                         </p>
                     </div>
-                    <a href="https://t.me/easymedCallbot" target="_blank" rel="noopener noreferrer" class="call-us-button">
-                        <button class="hero-button">
-                            Оставить заявку
-                        </button>
-                    </a>
+                    <button class="hero-button">
+                        Оставить заявку
+                    </button>
+
+                    <div class="popup-overlay hidden">
+                        <div class="call-popup">
+                            <div class="call-popup__text">
+                                <h2>Оставить заявку</h2>
+                            </div>
+
+                            <form id="popupForm" class="call-popup__form">
+                                <input type="email" name="email" placeholder="Ваш email" required />
+                                <input type="text" name="name" placeholder="Ваше имя" required />
+                                <input type="tel" name="phone" placeholder="Введите номер телефона" required />
+
+                                <div class="call-popup__btn">
+                                    <button type="submit" class="popup__btn">Отправить</button>
+                                </div>
+                            </form>
+
+                            <div class="call-popup__close">
+                                <img src="./assets/popup-exit.png" alt="close">
+                            </div>
+                        </div>
+                    </div>
+
                 </section>
                 <section class="section lead-section">
                     <div class="lead-text">
@@ -133,5 +154,6 @@
             </div>
         </div>
     </div>
+<script src="script.js"></script>
 </body>
 </html>
