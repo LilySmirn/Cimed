@@ -23,6 +23,12 @@ body {
     align-items: center;
 }
 
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .header, .main, .footer {
     width: 1200px;
@@ -66,4 +72,68 @@ body {
 .tg-number {
     text-decoration: none;
     color: black;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 482px;
+    background-image: url('assets/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    gap: 15px;
+}
+
+.highlights {
+    color: #0085FF;
+}
+
+.hero-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    width: 680px;
+    line-height: 110%;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-text-p {
+    text-align: center;
+    font-size: 22px;
+    line-height: 130%;
+    width: 771px;
+}
+
+.hero-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 442px;
+    height: 66px;
+    border-radius: 10px;
+    color: white;
+    background: #0085FF;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.lead-text {
+    text-align: center;
+    font-size: 26px;
+    line-height: 120%;
+    max-width: 916px;
+    margin: 78px auto;
 }
