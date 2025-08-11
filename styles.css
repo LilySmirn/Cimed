@@ -10,6 +10,7 @@ body, html {
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: "Segoe UI";
+    text-align: center;
 }
 
 body {
@@ -136,4 +137,40 @@ body {
     line-height: 120%;
     max-width: 916px;
     margin: 78px auto;
+}
+
+.service-section, .diagnostics-section, .treatments-section, .mis-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    line-height: 120%;
+}
+
+.section-text {
+    width: 861px;
+    margin-bottom: 35px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 80px;
+}
+
+.hr-line {
+    width: 100%;
+    border: none;
+    height: 0.5px;
+    background-color: #0085FF;
+    margin-bottom: 70px;
+}
+
+.image-3 {
+    width: 1117px;
+    height: 472px;
 }
